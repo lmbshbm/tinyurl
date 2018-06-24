@@ -47,6 +47,7 @@ make
 - [ ] count each url parse time (high concurrent situation)
 - [ ] qrcode support
 - [ ] list api
+- [ ] retry logic with init db and request
 
 ## Reference
 - [GitHub/Ourls](https://github.com/takashiki/Ourls)
