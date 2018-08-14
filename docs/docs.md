@@ -10,7 +10,7 @@ TODO
 ## 后端
 
 ### API
-1. 生成短网址 POST /v1/url/{origin_url}/shorten
+1. 生成短网址 POST /v1/url/shorten
 payload:
 ```json
 {
@@ -18,7 +18,7 @@ payload:
 }
 ```
 2. 解析短网址 GET /n/{short_url}
-response:
+如果short_url存在，则返回original_url，前端跳转到相关地址，如果不存在，则提示错误。
 3. 获取短网址对应域名 GET /v1/url/{short_url}/parse
 response:
 ```json

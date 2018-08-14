@@ -1,7 +1,7 @@
 GO_BUILD_FLAGS=
 PKGS=$(shell go list ./... | grep -E -v "(vendor)")
 
-all:
+build:
 	go build $(GO_BUILD_FLAGS) -o tinyurl
 dev:
 	./tinyurl -config dev.properties
